@@ -1,0 +1,8 @@
+# data
+sample/*
+!sample/sakura.geojson
+
+
+# artifact
+src/weights
+src/work_dirs

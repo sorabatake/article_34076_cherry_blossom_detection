@@ -1,0 +1,8 @@
+# gis
+tifffile
+rasterio
+pyproj
+
+# coco
+pycocotools
+sahi

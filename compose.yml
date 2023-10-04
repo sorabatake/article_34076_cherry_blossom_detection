@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  gdal-jupyter:
+    build:
+      context: .
+      dockerfile: article_32245_gdal/env/Dockerfile
+    ports:
+      - "8889:8889"
+    volumes:
+      - type: bind
+        source: ./
+        target: /workspace/
+    working_dir: /workspace
+    shm_size: '64gb'
+    entrypoint:
+      # - /bin/bash
+      - jupyter-lab 
+      - --allow-root
+      - --ip=0.0.0.0
+      - --port=8889
+      - --NotebookApp.token=''
+  mmdet-3:
+    build:
+      context: .
+      dockerfile: env/Dockerfile
+    ports:
+      - "9898:9898"
+    runtime: nvidia
+    volumes:
+      - type: bind
+        source: ./
+        target: /workspace/
+    working_dir: /workspace
+    shm_size: '64gb'
+    entrypoint:
+      # - /bin/bash
+      - /opt/conda/bin/jupyter-lab 
+      - --allow-root
+      - --ip=0.0.0.0
+      - --port=9898
+      - --NotebookApp.token=''

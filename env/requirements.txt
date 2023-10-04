@@ -1,0 +1,18 @@
+# basic
+numpy
+opencv-python
+pillow
+pandas 
+seaborn
+matplotlib
+tqdm
+python-box
+scikit-learn
+jupyterlab
+
+# io
+tifffile
+
+# coco
+pycocotools
+sahi
