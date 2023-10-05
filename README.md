@@ -2,6 +2,8 @@
 
 [宙畑の記事のコード]()
 
+![img](https://github.com/syu-tan/article-006/blob/main/src/output/003/sample_inference_1.jpg)
+
 
 ## 環境構築
 ```shell
