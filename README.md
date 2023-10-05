@@ -8,6 +8,11 @@
 docker compose up -d
 ```
 
+GPU を使わない場合は
+
+`compose.yml` の runtime: nvidia をコメントにしましょう
+
+
 ## 精度指標
 ```log 
 bbox
