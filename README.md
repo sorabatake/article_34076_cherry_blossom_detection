@@ -1,6 +1,6 @@
 # Article 006
 
-[宙畑の記事のコード]()
+[宙畑の記事のコード](https://sorabatake.jp/34076/)
 
 ![img](https://github.com/syu-tan/article-006/blob/main/src/output/003/sample_inference_1.jpg)
 
